@@ -48,3 +48,9 @@ because i was working inside a virtualised environment that means ethrnet: eth0,
 - -y /-Y:
 -  -y sets data link type, while -y applies a display filter
 
+#  to read a file in kali
+
+- open it inside the kali box, it will aotomatically open through wire shark.
+## apply filters
+- dns.qry.type==1 / dns.a for A type files
+- dns to read all the dns 
