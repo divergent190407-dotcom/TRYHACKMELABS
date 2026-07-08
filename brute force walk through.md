@@ -33,3 +33,4 @@
     "function": "login"}
 
 - python3 script.py usernames_gmail.com.txt | grep -v INVALID
+<img width="1920" height="1080" alt="Screenshot_2026-07-08_19_49_47" src="https://github.com/user-attachments/assets/8353a794-2123-4eaa-a23a-a439b76038f4" />
