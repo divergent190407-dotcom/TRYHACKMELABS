@@ -53,4 +53,16 @@ because i was working inside a virtualised environment that means ethrnet: eth0,
 - open it inside the kali box, it will aotomatically open through wire shark.
 ## apply filters
 - dns.qry.type==1 / dns.a for A type files
-- dns to read all the dns 
+- dns to read all the dns
+# through terminal
+- firct find the file:
+- └─$ find ~ -name "dns_exfil_1617459299197.pcap"
+- go into that directory:
+- cd ~/downloads
+- then:
+- └─$ tshark -r ~/Downloads/dns_exfil_1617459299197.pcap -Y "dns"
+-└─$ tshark -r dns_exfil_1617459299197.pcap -Y "dns.flags.response==0" -T fields -e dns.qry.name
+- $ tshark -r dns_exfil_1617459299197.pcap \                                 
+- -Y "dns.flags.response==0" \
+- -T fields -e dns.qry.name | cut -d'.' -f1
+
