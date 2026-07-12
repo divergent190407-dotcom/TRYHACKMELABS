@@ -1,4 +1,5 @@
--doenload with sudo apt install tshark
+- https://tryhackme.com/room/tshark?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=6940f9fd986dfc95caf4ed83
+- download with sudo apt install tshark
 # to read a file with tshark
 
 ## List Network Interfaces
