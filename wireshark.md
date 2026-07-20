@@ -1,1 +1,22 @@
-
+## decrypting a hhtp request
+- if the file is in zip, unzip it
+- cd ~/Downloads
+- unzip sch3MaD3Mon-stage1-1712653515111.zip
+- then look for the unzipped files:
+- ls -R ~/Downloads
+- or
+- find ~/Downloads -type f | grep -Ei "pcap|pcapng|log|ssl|key"
+- look for pcap file sor log file
+- open wireshark directly
+- wireshark ~/Downloads/sch3MaD3Mon-stage1/mayh3Mmarket.pcapng
+- or indirectly:
+- in terminal :
+- wireshark
+- in the wireshark, go to file then open file the one you need.
+- go to edits, preference, choose tls n the log file , if you are not ablr to choose the file, write it down in the path.
+- look for http request in filter
+- then post request:
+- http.request.method == "POST"
+- right click on the request, follow, then http stream
+- then u have the username and the password
+- 
