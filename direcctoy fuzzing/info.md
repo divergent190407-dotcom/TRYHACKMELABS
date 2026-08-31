@@ -1,0 +1,4 @@
+- directory bruteforcing to find some of the hidden paths.
+- it has many fuzzing tools.
+- gobuster
+- gobuster dir --useragent "PENTEST" --wordlist "/path/to/wordlist.txt" --url $URL
