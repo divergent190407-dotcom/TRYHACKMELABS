@@ -1,0 +1,7 @@
+- CIDR : classless inter-domain rounting is an ip address alolocation method that improves data efficiency on the internet.
+- all the devices connect with each other using a number that are ip addresses.
+- organizations use cidr to allocate ip addresses to communicate efficiently in their network.
+- example:
+- trying to recon facebook.com
+- go with arin whois
+- 
